@@ -27,6 +27,6 @@ Push to a Netlify-connected git repo, or drag the `dist/` folder into Netlify. T
 
 ## Credits
 
-Created by [Your Group Names] for **Japanese 10 — Elementary Japanese I**, 1st Semester AY 2024–2025, University of the Philippines Cebu, under Prof. Ma. Rosario Ballescas.
+Created for **Japanese 10 — Elementary Japanese I**, 1st Semester AY 2024–2025, University of the Philippines Cebu, under Prof. Ma. Rosario Ballescas.
 
 Vocabulary source: *Minna no Nihongo I, 2nd Edition (Romanized Version)* — UP Cebu Students' Vocabulary Translation Guide.
