@@ -1,0 +1,169 @@
+import { useEffect, useState } from 'react'
+import { Moon, Sun, Trash2, Info } from 'lucide-react'
+import PageHeader from '../components/PageHeader.jsx'
+import { useStore } from '../lib/store.js'
+
+export default function Settings() {
+  const settings = useStore((s) => s.settings)
+  const updateSetting = useStore((s) => s.updateSetting)
+  const clearAll = useStore((s) => s.clearAll)
+  const [storageInfo, setStorageInfo] = useState(null)
+
+  useEffect(() => {
+    if (navigator.storage?.estimate) {
+      navigator.storage.estimate().then((info) => {
+        setStorageInfo({
+          usedKb: Math.round((info.usage || 0) / 1024),
+          quotaMb: Math.round((info.quota || 0) / 1048576),
+        })
+      })
+    }
+  }, [])
+
+  function handleClear() {
+    if (confirm('Clear all progress, learned words, and quiz history? This cannot be undone.')) {
+      clearAll()
+      alert('Progress cleared.')
+    }
+  }
+
+  return (
+    <div>
+      <PageHeader title="Settings" back={false} />
+      <main className="max-w-3xl mx-auto px-4 pt-4 pb-24 space-y-6">
+        <section className="glow-card p-5 space-y-4">
+          <h2 className="font-semibold">Appearance</h2>
+          <Row label="Dark mode" hint="Recommended for the HackerRank vibe">
+            <Toggle
+              value={settings.darkMode}
+              onChange={(v) => updateSetting('darkMode', v)}
+              iconOn={Moon}
+              iconOff={Sun}
+            />
+          </Row>
+          <Row label="Font size">
+            <RadioGroup
+              value={settings.fontSize}
+              onChange={(v) => updateSetting('fontSize', v)}
+              options={[
+                { v: 'small', l: 'Small' },
+                { v: 'medium', l: 'Medium' },
+                { v: 'large', l: 'Large' },
+              ]}
+            />
+          </Row>
+        </section>
+
+        <section className="glow-card p-5 space-y-4">
+          <h2 className="font-semibold">Audio</h2>
+          <Row label="Audio speed" hint={`${settings.audioSpeed.toFixed(2)}x`}>
+            <RadioGroup
+              value={String(settings.audioSpeed)}
+              onChange={(v) => updateSetting('audioSpeed', Number(v))}
+              options={[
+                { v: '0.75', l: '0.75x' },
+                { v: '1', l: '1x' },
+                { v: '1.25', l: '1.25x' },
+              ]}
+            />
+          </Row>
+          <Row
+            label="Auto-play in word detail"
+            hint="Plays pronunciation when opening a word"
+          >
+            <Toggle
+              value={settings.autoPlay}
+              onChange={(v) => updateSetting('autoPlay', v)}
+            />
+          </Row>
+          <p className="text-xs text-muted leading-relaxed">
+            Audio uses your device's built-in Japanese voice (Web Speech API).
+            Voice quality depends on your operating system; install a Japanese voice pack for the best results.
+          </p>
+        </section>
+
+        <section className="glow-card p-5 space-y-4">
+          <h2 className="font-semibold">Data</h2>
+          {storageInfo && (
+            <p className="text-xs text-muted">
+              Local storage: ~{storageInfo.usedKb} KB used of {storageInfo.quotaMb} MB available.
+            </p>
+          )}
+          <button onClick={handleClear} className="btn-ghost text-danger border-danger/30 hover:bg-danger/10">
+            <Trash2 className="w-4 h-4" /> Clear all progress
+          </button>
+        </section>
+
+        <section className="glow-card p-5 space-y-3">
+          <div className="flex items-center gap-2">
+            <Info className="w-4 h-4 text-accent" />
+            <h2 className="font-semibold">About</h2>
+          </div>
+          <div className="text-sm text-muted leading-relaxed space-y-1">
+            <p>Minna no Nihongo — Interactive Study Guide v0.1.0</p>
+            <p>Created by [Your Group Names]</p>
+            <p>Course: Japanese 10 — UP Cebu, Prof. Ma. Rosario Ballescas</p>
+            <p>Data source: Minna no Nihongo I, 2nd Edition (Romanized Version)</p>
+          </div>
+        </section>
+      </main>
+    </div>
+  )
+}
+
+function Row({ label, hint, children }) {
+  return (
+    <div className="flex items-center justify-between gap-4 flex-wrap">
+      <div>
+        <div className="text-sm font-medium">{label}</div>
+        {hint && <div className="text-xs text-muted">{hint}</div>}
+      </div>
+      <div>{children}</div>
+    </div>
+  )
+}
+
+function Toggle({ value, onChange, iconOn, iconOff }) {
+  const On = iconOn
+  const Off = iconOff
+  return (
+    <button
+      onClick={() => onChange(!value)}
+      role="switch"
+      aria-checked={value}
+      className={`relative w-14 h-8 rounded-full transition border ${
+        value ? 'bg-accent border-accent' : 'bg-white/5 border-line'
+      }`}
+    >
+      <span
+        className={`absolute top-1 w-6 h-6 rounded-full bg-bg shadow flex items-center justify-center transition-all ${
+          value ? 'left-7' : 'left-1'
+        }`}
+      >
+        {value && On ? (
+          <On className="w-3 h-3 text-accent" />
+        ) : Off ? (
+          <Off className="w-3 h-3 text-muted" />
+        ) : null}
+      </span>
+    </button>
+  )
+}
+
+function RadioGroup({ value, onChange, options }) {
+  return (
+    <div className="flex rounded-xl border border-line overflow-hidden">
+      {options.map(({ v, l }) => (
+        <button
+          key={v}
+          onClick={() => onChange(v)}
+          className={`px-3 py-2 text-sm transition ${
+            value === v ? 'bg-accent text-bg font-medium' : 'bg-surface text-muted hover:bg-surface2'
+          }`}
+        >
+          {l}
+        </button>
+      ))}
+    </div>
+  )
+}
