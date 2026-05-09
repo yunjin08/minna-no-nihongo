@@ -14,6 +14,7 @@ export const useStore = create(
         fontSize: 'medium',
         audioSpeed: 1,
         autoPlay: false,
+        installPromptDismissed: false,
       },
 
       isLearned: (id) => get().learnedWords.includes(id),

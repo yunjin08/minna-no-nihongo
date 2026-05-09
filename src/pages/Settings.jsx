@@ -1,13 +1,16 @@
 import { useEffect, useState } from 'react'
-import { Moon, Sun, Trash2, Info } from 'lucide-react'
+import { Moon, Sun, Trash2, Info, Smartphone, AlertTriangle } from 'lucide-react'
 import PageHeader from '../components/PageHeader.jsx'
 import { useStore } from '../lib/store.js'
+import { hasJapaneseVoice, isSpeechSupported } from '../lib/speech.js'
+import { isIOS, isStandalone } from '../lib/install.js'
 
 export default function Settings() {
   const settings = useStore((s) => s.settings)
   const updateSetting = useStore((s) => s.updateSetting)
   const clearAll = useStore((s) => s.clearAll)
   const [storageInfo, setStorageInfo] = useState(null)
+  const [voiceMissing, setVoiceMissing] = useState(false)
 
   useEffect(() => {
     if (navigator.storage?.estimate) {
@@ -18,6 +21,15 @@ export default function Settings() {
         })
       })
     }
+  }, [])
+
+  useEffect(() => {
+    if (!isSpeechSupported()) return
+    const check = () => setVoiceMissing(!hasJapaneseVoice())
+    check()
+    // Voices may arrive async; re-check on the event.
+    window.speechSynthesis.addEventListener?.('voiceschanged', check)
+    return () => window.speechSynthesis.removeEventListener?.('voiceschanged', check)
   }, [])
 
   function handleClear() {
@@ -78,8 +90,47 @@ export default function Settings() {
           </Row>
           <p className="text-xs text-muted leading-relaxed">
             Audio uses your device's built-in Japanese voice (Web Speech API).
-            Voice quality depends on your operating system; install a Japanese voice pack for the best results.
+            Voice quality depends on your operating system.
           </p>
+          {voiceMissing && (
+            <div className="rounded-xl border border-warn/30 bg-warn/5 p-3 text-xs leading-relaxed">
+              <div className="flex items-center gap-2 text-warn font-semibold mb-1">
+                <AlertTriangle className="w-4 h-4" /> No Japanese voice detected
+              </div>
+              {isIOS ? (
+                <p className="text-muted">
+                  On iPhone/iPad, install a Japanese voice in:{' '}
+                  <strong>Settings → Accessibility → Spoken Content → Voices → Japanese</strong>.
+                  Pick any voice (e.g. Kyoko or Otoya). Then reopen this app.
+                </p>
+              ) : (
+                <p className="text-muted">
+                  Install a Japanese voice pack from your operating system's
+                  language/accessibility settings, then reload the app.
+                </p>
+              )}
+            </div>
+          )}
+        </section>
+
+        <section className="glow-card p-5 space-y-4">
+          <h2 className="font-semibold">Install</h2>
+          <div className="text-sm text-muted">
+            {isStandalone()
+              ? 'Minna is installed and running in standalone mode. Nice.'
+              : 'Add Minna to your home screen for fullscreen, offline-ready access.'}
+          </div>
+          {!isStandalone() && (
+            <button
+              onClick={() => {
+                updateSetting('installPromptDismissed', false)
+                window.dispatchEvent(new Event('mnn:show-install'))
+              }}
+              className="btn-ghost"
+            >
+              <Smartphone className="w-4 h-4" /> Show install instructions
+            </button>
+          )}
         </section>
 
         <section className="glow-card p-5 space-y-4">

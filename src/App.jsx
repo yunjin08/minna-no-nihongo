@@ -10,8 +10,10 @@ import Search from './pages/Search.jsx'
 import Progress from './pages/Progress.jsx'
 import Settings from './pages/Settings.jsx'
 import BottomNav from './components/BottomNav.jsx'
+import InstallPrompt from './components/InstallPrompt.jsx'
 import { useFontScale } from './hooks/useFontScale.js'
 import { useDarkMode } from './hooks/useDarkMode.js'
+import { unlockSpeech } from './lib/speech.js'
 
 export default function App() {
   useFontScale()
@@ -21,6 +23,18 @@ export default function App() {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [location.pathname])
+
+  // Unlock iOS Safari TTS on the very first user interaction.
+  useEffect(() => {
+    const handler = () => unlockSpeech()
+    const opts = { once: true, passive: true, capture: true }
+    window.addEventListener('pointerdown', handler, opts)
+    window.addEventListener('keydown', handler, opts)
+    return () => {
+      window.removeEventListener('pointerdown', handler, opts)
+      window.removeEventListener('keydown', handler, opts)
+    }
+  }, [])
 
   return (
     <div className="min-h-screen pb-24 animate-fade-in">
@@ -37,6 +51,7 @@ export default function App() {
         <Route path="*" element={<Home />} />
       </Routes>
       <BottomNav />
+      <InstallPrompt />
     </div>
   )
 }
