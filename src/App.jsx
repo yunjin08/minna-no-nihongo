@@ -9,6 +9,12 @@ import QuizResult from './pages/QuizResult.jsx'
 import Search from './pages/Search.jsx'
 import Progress from './pages/Progress.jsx'
 import Settings from './pages/Settings.jsx'
+import HiraganaHome from './pages/HiraganaHome.jsx'
+import HiraganaRow from './pages/HiraganaRow.jsx'
+import HiraganaWords from './pages/HiraganaWords.jsx'
+import HiraganaQuizSelect from './pages/HiraganaQuizSelect.jsx'
+import HiraganaQuiz from './pages/HiraganaQuiz.jsx'
+import HiraganaQuizResult from './pages/HiraganaQuizResult.jsx'
 import BottomNav from './components/BottomNav.jsx'
 import InstallPrompt from './components/InstallPrompt.jsx'
 import { useFontScale } from './hooks/useFontScale.js'
@@ -48,6 +54,18 @@ export default function App() {
         <Route path="/search" element={<Search />} />
         <Route path="/progress" element={<Progress />} />
         <Route path="/settings" element={<Settings />} />
+
+        {/* Hiragana */}
+        <Route path="/hiragana" element={<HiraganaHome />} />
+        <Route path="/hiragana/row/:rowId" element={<HiraganaRow />} />
+        <Route path="/hiragana/row/:rowId/quiz" element={<HiraganaQuizSelect />} />
+        <Route path="/hiragana/row/:rowId/quiz/:mode" element={<HiraganaQuiz />} />
+        <Route path="/hiragana/row/:rowId/quiz/:mode/result" element={<HiraganaQuizResult />} />
+        <Route path="/hiragana/words" element={<HiraganaWords />} />
+        <Route path="/hiragana/words/quiz" element={<HiraganaQuizSelect isWords />} />
+        <Route path="/hiragana/words/quiz/:mode" element={<HiraganaQuiz isWords />} />
+        <Route path="/hiragana/words/quiz/:mode/result" element={<HiraganaQuizResult isWords />} />
+
         <Route path="*" element={<Home />} />
       </Routes>
       <BottomNav />

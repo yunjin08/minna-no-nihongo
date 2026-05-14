@@ -8,6 +8,8 @@ export const useStore = create(
     (set, get) => ({
       learnedWords: [],
       quizHistory: [],
+      learnedHiragana: [],
+      hiraQuizHistory: [],
       studyDates: [],
       settings: {
         darkMode: true,
@@ -32,6 +34,30 @@ export const useStore = create(
         if (learned) set_.add(id)
         else set_.delete(id)
         set({ learnedWords: [...set_] })
+        get().touchStudyDate()
+      },
+
+      isHiraLearned: (id) => get().learnedHiragana.includes(id),
+
+      toggleLearnedHira: (id) => {
+        const set_ = new Set(get().learnedHiragana)
+        if (set_.has(id)) set_.delete(id)
+        else set_.add(id)
+        set({ learnedHiragana: [...set_] })
+        get().touchStudyDate()
+      },
+
+      markLearnedHira: (id, learned) => {
+        const set_ = new Set(get().learnedHiragana)
+        if (learned) set_.add(id)
+        else set_.delete(id)
+        set({ learnedHiragana: [...set_] })
+        get().touchStudyDate()
+      },
+
+      recordHiraQuiz: (entry) => {
+        const next = [{ ...entry, date: entry.date || today() }, ...get().hiraQuizHistory].slice(0, 200)
+        set({ hiraQuizHistory: next })
         get().touchStudyDate()
       },
 

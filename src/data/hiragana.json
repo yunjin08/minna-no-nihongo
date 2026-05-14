@@ -1,0 +1,297 @@
+{
+  "rows": [
+    {
+      "id": "a",
+      "name": "A Row",
+      "label": "あ行",
+      "group": "basic",
+      "characters": [
+        { "id": "hira-a",  "hiragana": "あ", "romaji": "a"  },
+        { "id": "hira-i",  "hiragana": "い", "romaji": "i"  },
+        { "id": "hira-u",  "hiragana": "う", "romaji": "u"  },
+        { "id": "hira-e",  "hiragana": "え", "romaji": "e"  },
+        { "id": "hira-o",  "hiragana": "お", "romaji": "o"  }
+      ]
+    },
+    {
+      "id": "ka",
+      "name": "KA Row",
+      "label": "か行",
+      "group": "basic",
+      "characters": [
+        { "id": "hira-ka", "hiragana": "か", "romaji": "ka" },
+        { "id": "hira-ki", "hiragana": "き", "romaji": "ki" },
+        { "id": "hira-ku", "hiragana": "く", "romaji": "ku" },
+        { "id": "hira-ke", "hiragana": "け", "romaji": "ke" },
+        { "id": "hira-ko", "hiragana": "こ", "romaji": "ko" }
+      ]
+    },
+    {
+      "id": "sa",
+      "name": "SA Row",
+      "label": "さ行",
+      "group": "basic",
+      "characters": [
+        { "id": "hira-sa",  "hiragana": "さ", "romaji": "sa"  },
+        { "id": "hira-shi", "hiragana": "し", "romaji": "shi" },
+        { "id": "hira-su",  "hiragana": "す", "romaji": "su"  },
+        { "id": "hira-se",  "hiragana": "せ", "romaji": "se"  },
+        { "id": "hira-so",  "hiragana": "そ", "romaji": "so"  }
+      ]
+    },
+    {
+      "id": "ta",
+      "name": "TA Row",
+      "label": "た行",
+      "group": "basic",
+      "characters": [
+        { "id": "hira-ta",  "hiragana": "た", "romaji": "ta"  },
+        { "id": "hira-chi", "hiragana": "ち", "romaji": "chi" },
+        { "id": "hira-tsu", "hiragana": "つ", "romaji": "tsu" },
+        { "id": "hira-te",  "hiragana": "て", "romaji": "te"  },
+        { "id": "hira-to",  "hiragana": "と", "romaji": "to"  }
+      ]
+    },
+    {
+      "id": "na",
+      "name": "NA Row",
+      "label": "な行",
+      "group": "basic",
+      "characters": [
+        { "id": "hira-na", "hiragana": "な", "romaji": "na" },
+        { "id": "hira-ni", "hiragana": "に", "romaji": "ni" },
+        { "id": "hira-nu", "hiragana": "ぬ", "romaji": "nu" },
+        { "id": "hira-ne", "hiragana": "ね", "romaji": "ne" },
+        { "id": "hira-no", "hiragana": "の", "romaji": "no" }
+      ]
+    },
+    {
+      "id": "ha",
+      "name": "HA Row",
+      "label": "は行",
+      "group": "basic",
+      "characters": [
+        { "id": "hira-ha", "hiragana": "は", "romaji": "ha" },
+        { "id": "hira-hi", "hiragana": "ひ", "romaji": "hi" },
+        { "id": "hira-fu", "hiragana": "ふ", "romaji": "fu" },
+        { "id": "hira-he", "hiragana": "へ", "romaji": "he" },
+        { "id": "hira-ho", "hiragana": "ほ", "romaji": "ho" }
+      ]
+    },
+    {
+      "id": "ma",
+      "name": "MA Row",
+      "label": "ま行",
+      "group": "basic",
+      "characters": [
+        { "id": "hira-ma", "hiragana": "ま", "romaji": "ma" },
+        { "id": "hira-mi", "hiragana": "み", "romaji": "mi" },
+        { "id": "hira-mu", "hiragana": "む", "romaji": "mu" },
+        { "id": "hira-me", "hiragana": "め", "romaji": "me" },
+        { "id": "hira-mo", "hiragana": "も", "romaji": "mo" }
+      ]
+    },
+    {
+      "id": "ya",
+      "name": "YA Row",
+      "label": "や行",
+      "group": "basic",
+      "characters": [
+        { "id": "hira-ya", "hiragana": "や", "romaji": "ya" },
+        { "id": "hira-yu", "hiragana": "ゆ", "romaji": "yu" },
+        { "id": "hira-yo", "hiragana": "よ", "romaji": "yo" }
+      ]
+    },
+    {
+      "id": "ra",
+      "name": "RA Row",
+      "label": "ら行",
+      "group": "basic",
+      "characters": [
+        { "id": "hira-ra", "hiragana": "ら", "romaji": "ra" },
+        { "id": "hira-ri", "hiragana": "り", "romaji": "ri" },
+        { "id": "hira-ru", "hiragana": "る", "romaji": "ru" },
+        { "id": "hira-re", "hiragana": "れ", "romaji": "re" },
+        { "id": "hira-ro", "hiragana": "ろ", "romaji": "ro" }
+      ]
+    },
+    {
+      "id": "wa",
+      "name": "WA Row",
+      "label": "わ行",
+      "group": "basic",
+      "characters": [
+        { "id": "hira-wa", "hiragana": "わ", "romaji": "wa" },
+        { "id": "hira-wo", "hiragana": "を", "romaji": "wo" }
+      ]
+    },
+    {
+      "id": "n",
+      "name": "N",
+      "label": "ん",
+      "group": "basic",
+      "characters": [
+        { "id": "hira-n", "hiragana": "ん", "romaji": "n" }
+      ]
+    },
+    {
+      "id": "ga",
+      "name": "GA Row",
+      "label": "が行",
+      "group": "voiced",
+      "characters": [
+        { "id": "hira-ga", "hiragana": "が", "romaji": "ga" },
+        { "id": "hira-gi", "hiragana": "ぎ", "romaji": "gi" },
+        { "id": "hira-gu", "hiragana": "ぐ", "romaji": "gu" },
+        { "id": "hira-ge", "hiragana": "げ", "romaji": "ge" },
+        { "id": "hira-go", "hiragana": "ご", "romaji": "go" }
+      ]
+    },
+    {
+      "id": "za",
+      "name": "ZA Row",
+      "label": "ざ行",
+      "group": "voiced",
+      "characters": [
+        { "id": "hira-za", "hiragana": "ざ", "romaji": "za"  },
+        { "id": "hira-ji", "hiragana": "じ", "romaji": "ji"  },
+        { "id": "hira-zu", "hiragana": "ず", "romaji": "zu"  },
+        { "id": "hira-ze", "hiragana": "ぜ", "romaji": "ze"  },
+        { "id": "hira-zo", "hiragana": "ぞ", "romaji": "zo"  }
+      ]
+    },
+    {
+      "id": "da",
+      "name": "DA Row",
+      "label": "だ行",
+      "group": "voiced",
+      "characters": [
+        { "id": "hira-da",  "hiragana": "だ", "romaji": "da"  },
+        { "id": "hira-di",  "hiragana": "ぢ", "romaji": "di"  },
+        { "id": "hira-du",  "hiragana": "づ", "romaji": "du"  },
+        { "id": "hira-de",  "hiragana": "で", "romaji": "de"  },
+        { "id": "hira-do",  "hiragana": "ど", "romaji": "do"  }
+      ]
+    },
+    {
+      "id": "ba",
+      "name": "BA Row",
+      "label": "ば行",
+      "group": "voiced",
+      "characters": [
+        { "id": "hira-ba", "hiragana": "ば", "romaji": "ba" },
+        { "id": "hira-bi", "hiragana": "び", "romaji": "bi" },
+        { "id": "hira-bu", "hiragana": "ぶ", "romaji": "bu" },
+        { "id": "hira-be", "hiragana": "べ", "romaji": "be" },
+        { "id": "hira-bo", "hiragana": "ぼ", "romaji": "bo" }
+      ]
+    },
+    {
+      "id": "pa",
+      "name": "PA Row",
+      "label": "ぱ行",
+      "group": "voiced",
+      "characters": [
+        { "id": "hira-pa", "hiragana": "ぱ", "romaji": "pa" },
+        { "id": "hira-pi", "hiragana": "ぴ", "romaji": "pi" },
+        { "id": "hira-pu", "hiragana": "ぷ", "romaji": "pu" },
+        { "id": "hira-pe", "hiragana": "ぺ", "romaji": "pe" },
+        { "id": "hira-po", "hiragana": "ぽ", "romaji": "po" }
+      ]
+    },
+    {
+      "id": "combos",
+      "name": "Combinations",
+      "label": "拗音",
+      "group": "combo",
+      "characters": [
+        { "id": "hira-kya", "hiragana": "きゃ", "romaji": "kya" },
+        { "id": "hira-kyu", "hiragana": "きゅ", "romaji": "kyu" },
+        { "id": "hira-kyo", "hiragana": "きょ", "romaji": "kyo" },
+        { "id": "hira-sha", "hiragana": "しゃ", "romaji": "sha" },
+        { "id": "hira-shu", "hiragana": "しゅ", "romaji": "shu" },
+        { "id": "hira-sho", "hiragana": "しょ", "romaji": "sho" },
+        { "id": "hira-cha", "hiragana": "ちゃ", "romaji": "cha" },
+        { "id": "hira-chu", "hiragana": "ちゅ", "romaji": "chu" },
+        { "id": "hira-cho", "hiragana": "ちょ", "romaji": "cho" },
+        { "id": "hira-nya", "hiragana": "にゃ", "romaji": "nya" },
+        { "id": "hira-nyu", "hiragana": "にゅ", "romaji": "nyu" },
+        { "id": "hira-nyo", "hiragana": "にょ", "romaji": "nyo" },
+        { "id": "hira-hya", "hiragana": "ひゃ", "romaji": "hya" },
+        { "id": "hira-hyu", "hiragana": "ひゅ", "romaji": "hyu" },
+        { "id": "hira-hyo", "hiragana": "ひょ", "romaji": "hyo" },
+        { "id": "hira-mya", "hiragana": "みゃ", "romaji": "mya" },
+        { "id": "hira-myu", "hiragana": "みゅ", "romaji": "myu" },
+        { "id": "hira-myo", "hiragana": "みょ", "romaji": "myo" },
+        { "id": "hira-rya", "hiragana": "りゃ", "romaji": "rya" },
+        { "id": "hira-ryu", "hiragana": "りゅ", "romaji": "ryu" },
+        { "id": "hira-ryo", "hiragana": "りょ", "romaji": "ryo" },
+        { "id": "hira-gya", "hiragana": "ぎゃ", "romaji": "gya" },
+        { "id": "hira-gyu", "hiragana": "ぎゅ", "romaji": "gyu" },
+        { "id": "hira-gyo", "hiragana": "ぎょ", "romaji": "gyo" },
+        { "id": "hira-ja",  "hiragana": "じゃ", "romaji": "ja"  },
+        { "id": "hira-ju",  "hiragana": "じゅ", "romaji": "ju"  },
+        { "id": "hira-jo",  "hiragana": "じょ", "romaji": "jo"  },
+        { "id": "hira-bya", "hiragana": "びゃ", "romaji": "bya" },
+        { "id": "hira-byu", "hiragana": "びゅ", "romaji": "byu" },
+        { "id": "hira-byo", "hiragana": "びょ", "romaji": "byo" },
+        { "id": "hira-pya", "hiragana": "ぴゃ", "romaji": "pya" },
+        { "id": "hira-pyu", "hiragana": "ぴゅ", "romaji": "pyu" },
+        { "id": "hira-pyo", "hiragana": "ぴょ", "romaji": "pyo" }
+      ]
+    }
+  ],
+  "words": [
+    { "id": "hw-inu",       "hiragana": "いぬ",       "romaji": "inu",       "meaning": "dog"             },
+    { "id": "hw-neko",      "hiragana": "ねこ",       "romaji": "neko",      "meaning": "cat"             },
+    { "id": "hw-sakana",    "hiragana": "さかな",     "romaji": "sakana",    "meaning": "fish"            },
+    { "id": "hw-tori",      "hiragana": "とり",       "romaji": "tori",      "meaning": "bird"            },
+    { "id": "hw-uma",       "hiragana": "うま",       "romaji": "uma",       "meaning": "horse"           },
+    { "id": "hw-kuma",      "hiragana": "くま",       "romaji": "kuma",      "meaning": "bear"            },
+    { "id": "hw-saru",      "hiragana": "さる",       "romaji": "saru",      "meaning": "monkey"          },
+    { "id": "hw-hana",      "hiragana": "はな",       "romaji": "hana",      "meaning": "flower"          },
+    { "id": "hw-ki",        "hiragana": "き",         "romaji": "ki",        "meaning": "tree"            },
+    { "id": "hw-mori",      "hiragana": "もり",       "romaji": "mori",      "meaning": "forest"          },
+    { "id": "hw-yama",      "hiragana": "やま",       "romaji": "yama",      "meaning": "mountain"        },
+    { "id": "hw-umi",       "hiragana": "うみ",       "romaji": "umi",       "meaning": "sea"             },
+    { "id": "hw-kawa",      "hiragana": "かわ",       "romaji": "kawa",      "meaning": "river"           },
+    { "id": "hw-sora",      "hiragana": "そら",       "romaji": "sora",      "meaning": "sky"             },
+    { "id": "hw-tsuki",     "hiragana": "つき",       "romaji": "tsuki",     "meaning": "moon"            },
+    { "id": "hw-hoshi",     "hiragana": "ほし",       "romaji": "hoshi",     "meaning": "star"            },
+    { "id": "hw-hi",        "hiragana": "ひ",         "romaji": "hi",        "meaning": "sun / fire / day" },
+    { "id": "hw-ame",       "hiragana": "あめ",       "romaji": "ame",       "meaning": "rain"            },
+    { "id": "hw-yuki",      "hiragana": "ゆき",       "romaji": "yuki",      "meaning": "snow"            },
+    { "id": "hw-kaze",      "hiragana": "かぜ",       "romaji": "kaze",      "meaning": "wind"            },
+    { "id": "hw-haru",      "hiragana": "はる",       "romaji": "haru",      "meaning": "spring"          },
+    { "id": "hw-natsu",     "hiragana": "なつ",       "romaji": "natsu",     "meaning": "summer"          },
+    { "id": "hw-aki",       "hiragana": "あき",       "romaji": "aki",       "meaning": "autumn"          },
+    { "id": "hw-fuyu",      "hiragana": "ふゆ",       "romaji": "fuyu",      "meaning": "winter"          },
+    { "id": "hw-mizu",      "hiragana": "みず",       "romaji": "mizu",      "meaning": "water"           },
+    { "id": "hw-ie",        "hiragana": "いえ",       "romaji": "ie",        "meaning": "house"           },
+    { "id": "hw-heya",      "hiragana": "へや",       "romaji": "heya",      "meaning": "room"            },
+    { "id": "hw-machi",     "hiragana": "まち",       "romaji": "machi",     "meaning": "town / city"     },
+    { "id": "hw-michi",     "hiragana": "みち",       "romaji": "michi",     "meaning": "road / path"     },
+    { "id": "hw-hashi",     "hiragana": "はし",       "romaji": "hashi",     "meaning": "bridge"          },
+    { "id": "hw-kuruma",    "hiragana": "くるま",     "romaji": "kuruma",    "meaning": "car"             },
+    { "id": "hw-hon",       "hiragana": "ほん",       "romaji": "hon",       "meaning": "book"            },
+    { "id": "hw-tegami",    "hiragana": "てがみ",     "romaji": "tegami",    "meaning": "letter / mail"   },
+    { "id": "hw-kao",       "hiragana": "かお",       "romaji": "kao",       "meaning": "face"            },
+    { "id": "hw-me",        "hiragana": "め",         "romaji": "me",        "meaning": "eye"             },
+    { "id": "hw-mimi",      "hiragana": "みみ",       "romaji": "mimi",      "meaning": "ear"             },
+    { "id": "hw-kuchi",     "hiragana": "くち",       "romaji": "kuchi",     "meaning": "mouth"           },
+    { "id": "hw-te",        "hiragana": "て",         "romaji": "te",        "meaning": "hand"            },
+    { "id": "hw-ashi",      "hiragana": "あし",       "romaji": "ashi",      "meaning": "foot / leg"      },
+    { "id": "hw-atama",     "hiragana": "あたま",     "romaji": "atama",     "meaning": "head"            },
+    { "id": "hw-sensei",    "hiragana": "せんせい",   "romaji": "sensei",    "meaning": "teacher"         },
+    { "id": "hw-gakusei",   "hiragana": "がくせい",   "romaji": "gakusei",   "meaning": "student"         },
+    { "id": "hw-tomodachi", "hiragana": "ともだち",   "romaji": "tomodachi", "meaning": "friend"          },
+    { "id": "hw-nihon",     "hiragana": "にほん",     "romaji": "nihon",     "meaning": "Japan"           },
+    { "id": "hw-nihongo",   "hiragana": "にほんご",   "romaji": "nihongo",   "meaning": "Japanese language"},
+    { "id": "hw-sushi",     "hiragana": "すし",       "romaji": "sushi",     "meaning": "sushi"           },
+    { "id": "hw-ocha",      "hiragana": "おちゃ",     "romaji": "ocha",      "meaning": "green tea"       },
+    { "id": "hw-gohan",     "hiragana": "ごはん",     "romaji": "gohan",     "meaning": "meal / rice"     },
+    { "id": "hw-kimono",    "hiragana": "きもの",     "romaji": "kimono",    "meaning": "kimono"          },
+    { "id": "hw-sakura",    "hiragana": "さくら",     "romaji": "sakura",    "meaning": "cherry blossom"  },
+    { "id": "hw-hiragana",  "hiragana": "ひらがな",   "romaji": "hiragana",  "meaning": "hiragana"        }
+  ]
+}
