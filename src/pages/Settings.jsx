@@ -152,7 +152,12 @@ export default function Settings() {
           </div>
           <div className="text-sm text-muted leading-relaxed space-y-1">
             <p>Minna no Nihongo — Interactive Study Guide v0.1.0</p>
-            <p>Created by [Your Group Names]</p>
+            <p className="font-medium text-ink">Created by</p>
+            <ul className="space-y-0.5 pl-3 border-l border-accent/30">
+              {['Jed Donaire', 'Levi Bacarra', 'Jeric Rulete', 'Maxell Milay'].map((name) => (
+                <li key={name} className="text-sm">{name}</li>
+              ))}
+            </ul>
             <p>Course: Japanese 10 — UP Cebu, Prof. Ma. Rosario Ballescas</p>
             <p>Data source: Minna no Nihongo I, 2nd Edition (Romanized Version)</p>
           </div>
