@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { useParams, Link, useNavigate } from 'react-router-dom'
-import { Search as SearchIcon, GraduationCap, ArrowUpDown } from 'lucide-react'
+import { Search as SearchIcon, GraduationCap, ArrowUpDown, Eye, EyeOff } from 'lucide-react'
 import PageHeader from '../components/PageHeader.jsx'
 import WordRow from '../components/WordRow.jsx'
 import ProgressBar from '../components/ProgressBar.jsx'
@@ -15,6 +15,7 @@ export default function Chapter() {
   const learnedSet = new Set(learnedWords)
   const [query, setQuery] = useState('')
   const [sortBy, setSortBy] = useState('alpha')
+  const [showMeanings, setShowMeanings] = useState(true)
 
   const filtered = useMemo(() => {
     if (!chapter) return []
@@ -70,13 +71,21 @@ export default function Chapter() {
             <ArrowUpDown className="w-4 h-4" />
             {sortBy === 'alpha' ? 'A → Z' : 'By page'}
           </button>
+          <button
+            onClick={() => setShowMeanings((v) => !v)}
+            className="btn-ghost shrink-0"
+            aria-label={showMeanings ? 'Hide meanings' : 'Show meanings'}
+          >
+            {showMeanings ? <Eye className="w-4 h-4" /> : <EyeOff className="w-4 h-4" />}
+            {showMeanings ? 'Meanings on' : 'Meanings off'}
+          </button>
         </div>
 
         <div className="space-y-2 pb-24">
           {filtered.length === 0 ? (
             <div className="text-center py-12 text-muted">No words match your search.</div>
           ) : (
-            filtered.map((w) => <WordRow key={w.id} word={w} />)
+            filtered.map((w) => <WordRow key={w.id} word={w} showMeaning={showMeanings} />)
           )}
         </div>
       </main>

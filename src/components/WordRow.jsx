@@ -3,7 +3,7 @@ import { Check, ChevronRight } from 'lucide-react'
 import AudioButton from './AudioButton.jsx'
 import { useStore } from '../lib/store.js'
 
-export default function WordRow({ word, showChapter = false }) {
+export default function WordRow({ word, showChapter = false, showMeaning = true }) {
   const learned = useStore((s) => s.learnedWords.includes(word.id))
   return (
     <Link
@@ -17,7 +17,7 @@ export default function WordRow({ word, showChapter = false }) {
             <Check className="w-3.5 h-3.5 text-accent shrink-0" aria-label="Learned" />
           )}
         </div>
-        <div className="text-sm text-muted truncate">{word.english}</div>
+        {showMeaning && <div className="text-sm text-muted truncate">{word.english}</div>}
         {showChapter && word.chapterCode && (
           <div className="mt-1">
             <span className="pill text-[10px] text-muted">{word.chapterCode}</span>
