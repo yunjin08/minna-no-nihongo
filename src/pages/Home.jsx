@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Sparkles } from 'lucide-react'
+import { Sparkles, ArrowRight } from 'lucide-react'
 import ChapterCard from '../components/ChapterCard.jsx'
 import { chapters, totalWordCount } from '../lib/data.js'
 import { useStore } from '../lib/store.js'
@@ -45,6 +45,28 @@ export default function Home() {
             <Stat label="Streak" value={`${streak}d`} />
           </div>
         </div>
+      </section>
+
+      <section className="max-w-3xl mx-auto px-4 pb-8">
+        <div className="flex items-baseline justify-between mb-4">
+          <h2 className="text-xl font-semibold">Grammar</h2>
+          <span className="text-xs text-muted">Conjugation practice</span>
+        </div>
+        <Link
+          to="/adjectives"
+          className="glow-card p-5 flex items-center gap-4 group"
+        >
+          <div className="w-12 h-12 rounded-xl bg-accent2/10 border border-accent2/20 flex items-center justify-center text-xl shrink-0 font-bold text-accent2">
+            い・な
+          </div>
+          <div className="flex-1 min-w-0">
+            <div className="font-semibold">Adjectives</div>
+            <div className="text-sm text-muted mt-0.5">
+              15 i-adj + 9 na-adj · present &amp; past forms with example sentences
+            </div>
+          </div>
+          <ArrowRight className="w-4 h-4 text-muted group-hover:text-accent transition shrink-0" />
+        </Link>
       </section>
 
       <section className="max-w-3xl mx-auto px-4 pb-16">

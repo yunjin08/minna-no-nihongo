@@ -9,6 +9,8 @@ import QuizResult from './pages/QuizResult.jsx'
 import Search from './pages/Search.jsx'
 import Progress from './pages/Progress.jsx'
 import Settings from './pages/Settings.jsx'
+import AdjectivesHome from './pages/AdjectivesHome.jsx'
+import AdjectiveDetail from './pages/AdjectiveDetail.jsx'
 import HiraganaHome from './pages/HiraganaHome.jsx'
 import HiraganaRow from './pages/HiraganaRow.jsx'
 import HiraganaWords from './pages/HiraganaWords.jsx'
@@ -54,6 +56,10 @@ export default function App() {
         <Route path="/search" element={<Search />} />
         <Route path="/progress" element={<Progress />} />
         <Route path="/settings" element={<Settings />} />
+
+        {/* Adjectives */}
+        <Route path="/adjectives" element={<AdjectivesHome />} />
+        <Route path="/adjectives/:adjId" element={<AdjectiveDetail />} />
 
         {/* Hiragana */}
         <Route path="/hiragana" element={<HiraganaHome />} />

@@ -1,0 +1,331 @@
+{
+  "adjectives": [
+    {
+      "id": "adj-akai",
+      "romaji": "Akai",
+      "english": "Red",
+      "type": "i",
+      "stem": "Aka",
+      "chapter": 8,
+      "examples": {
+        "presentPos": { "romaji": "Kono kasa wa akai desu.", "english": "This umbrella is red." },
+        "presentNeg": { "romaji": "Kono kasa wa akakunai desu.", "english": "This umbrella is not red." },
+        "pastPos":    { "romaji": "Ano hana wa akakatta desu.", "english": "Those flowers were red." },
+        "pastNeg":    { "romaji": "Kono kuruma wa akakunakatta desu.", "english": "This car was not red." }
+      }
+    },
+    {
+      "id": "adj-atarashii",
+      "romaji": "Atarashii",
+      "english": "New",
+      "type": "i",
+      "stem": "Atarashi",
+      "chapter": 8,
+      "examples": {
+        "presentPos": { "romaji": "Kono jitensha wa atarashii desu.", "english": "This bicycle is new." },
+        "presentNeg": { "romaji": "Kono jitensha wa atarashikunai desu.", "english": "This bicycle is not new." },
+        "pastPos":    { "romaji": "Kaisha no kuruma wa atarashikatta desu.", "english": "The company's car was new." },
+        "pastNeg":    { "romaji": "Kono kaban wa atarashikunakatta desu.", "english": "This bag was not new." }
+      }
+    },
+    {
+      "id": "adj-atsui",
+      "romaji": "Atsui",
+      "english": "Hot",
+      "type": "i",
+      "stem": "Atsu",
+      "chapter": 8,
+      "examples": {
+        "presentPos": { "romaji": "Kono ocha wa atsui desu.", "english": "This tea is hot." },
+        "presentNeg": { "romaji": "Kono koohii wa atsukunai desu.", "english": "This coffee is not hot." },
+        "pastPos":    { "romaji": "Kesa no ocha wa atsukatta desu.", "english": "This morning's tea was hot." },
+        "pastNeg":    { "romaji": "Sono mizu wa atsukunakatta desu.", "english": "That water was not hot." }
+      }
+    },
+    {
+      "id": "adj-chiisai",
+      "romaji": "Chiisai",
+      "english": "Small",
+      "type": "i",
+      "stem": "Chiisa",
+      "chapter": 8,
+      "examples": {
+        "presentPos": { "romaji": "Kono heya wa chiisai desu.", "english": "This room is small." },
+        "presentNeg": { "romaji": "Kono kaban wa chiisakunai desu.", "english": "This bag is not small." },
+        "pastPos":    { "romaji": "Ano jitensha wa chiisakatta desu.", "english": "That bicycle was small." },
+        "pastNeg":    { "romaji": "Sono uchi wa chiisakunakatta desu.", "english": "That house was not small." }
+      }
+    },
+    {
+      "id": "adj-furui",
+      "romaji": "Furui",
+      "english": "Old",
+      "type": "i",
+      "stem": "Furu",
+      "chapter": 8,
+      "examples": {
+        "presentPos": { "romaji": "Kono jitensha wa furui desu.", "english": "This bicycle is old." },
+        "presentNeg": { "romaji": "Kono tokei wa furukunai desu.", "english": "This watch is not old." },
+        "pastPos":    { "romaji": "Sono kuruma wa furukatta desu.", "english": "That car was old." },
+        "pastNeg":    { "romaji": "Kono kaban wa furukunakatta desu.", "english": "This bag was not old." }
+      }
+    },
+    {
+      "id": "adj-isogashii",
+      "romaji": "Isogashii",
+      "english": "Busy",
+      "type": "i",
+      "stem": "Isogashi",
+      "chapter": 8,
+      "examples": {
+        "presentPos": { "romaji": "Nihon no seikatsu wa isogashii desu.", "english": "Life in Japan is busy." },
+        "presentNeg": { "romaji": "Kyō wa isogashikunai desu.", "english": "Today is not busy." },
+        "pastPos":    { "romaji": "Kinō wa isogashikatta desu.", "english": "Yesterday was busy." },
+        "pastNeg":    { "romaji": "Senshu wa isogashikunakatta desu.", "english": "Last week was not busy." }
+      }
+    },
+    {
+      "id": "adj-muzukashii",
+      "romaji": "Muzukashii",
+      "english": "Difficult",
+      "type": "i",
+      "stem": "Muzukashi",
+      "chapter": 8,
+      "examples": {
+        "presentPos": { "romaji": "Nihon-go wa muzukashii desu.", "english": "Japanese is difficult." },
+        "presentNeg": { "romaji": "Kono shukudai wa muzukashikunai desu.", "english": "This homework is not difficult." },
+        "pastPos":    { "romaji": "Shiken wa muzukashikatta desu.", "english": "The exam was difficult." },
+        "pastNeg":    { "romaji": "Kinō no shukudai wa muzukashikunakatta desu.", "english": "Yesterday's homework was not difficult." }
+      }
+    },
+    {
+      "id": "adj-ookii",
+      "romaji": "Ōkii",
+      "english": "Big",
+      "type": "i",
+      "stem": "Ōki",
+      "chapter": 8,
+      "examples": {
+        "presentPos": { "romaji": "Tōkyō-eki wa ōkii desu.", "english": "Tokyo Station is big." },
+        "presentNeg": { "romaji": "Kono heya wa ōkikunai desu.", "english": "This room is not big." },
+        "pastPos":    { "romaji": "Sono daigaku wa ōkikatta desu.", "english": "That university was big." },
+        "pastNeg":    { "romaji": "Kono uchi wa ōkikunakatta desu.", "english": "This house was not big." }
+      }
+    },
+    {
+      "id": "adj-oishii",
+      "romaji": "Oishii",
+      "english": "Delicious",
+      "type": "i",
+      "stem": "Oishi",
+      "chapter": 8,
+      "examples": {
+        "presentPos": { "romaji": "Nihon no tabemono wa oishii desu.", "english": "Japanese food is delicious." },
+        "presentNeg": { "romaji": "Kono sakana wa oishikunai desu.", "english": "This fish is not delicious." },
+        "pastPos":    { "romaji": "Sono koohii wa oishikatta desu.", "english": "That coffee was delicious." },
+        "pastNeg":    { "romaji": "Kono pan wa oishikunakatta desu.", "english": "This bread was not delicious." }
+      }
+    },
+    {
+      "id": "adj-omoshiroi",
+      "romaji": "Omoshiroi",
+      "english": "Interesting",
+      "type": "i",
+      "stem": "Omoshiro",
+      "chapter": 8,
+      "examples": {
+        "presentPos": { "romaji": "Kono eiga wa omoshiroi desu.", "english": "This movie is interesting." },
+        "presentNeg": { "romaji": "Kono hon wa omoshirokunai desu.", "english": "This book is not interesting." },
+        "pastPos":    { "romaji": "Sono eiga wa omoshirokatta desu.", "english": "That movie was interesting." },
+        "pastNeg":    { "romaji": "Kono zasshi wa omoshirokunakatta desu.", "english": "This magazine was not interesting." }
+      }
+    },
+    {
+      "id": "adj-samui",
+      "romaji": "Samui",
+      "english": "Cold (weather)",
+      "type": "i",
+      "stem": "Samu",
+      "chapter": 8,
+      "examples": {
+        "presentPos": { "romaji": "Kyō wa samui desu.", "english": "It is cold today." },
+        "presentNeg": { "romaji": "Kyō wa samukunai desu.", "english": "It is not cold today." },
+        "pastPos":    { "romaji": "Kinō wa samukatta desu.", "english": "It was cold yesterday." },
+        "pastNeg":    { "romaji": "Kinō wa samukunakatta desu.", "english": "It was not cold yesterday." }
+      }
+    },
+    {
+      "id": "adj-takai",
+      "romaji": "Takai",
+      "english": "Tall / Expensive",
+      "type": "i",
+      "stem": "Taka",
+      "chapter": 8,
+      "examples": {
+        "presentPos": { "romaji": "Nihon no kamera wa takai desu.", "english": "Japanese cameras are expensive." },
+        "presentNeg": { "romaji": "Kono kaban wa takakunai desu.", "english": "This bag is not expensive." },
+        "pastPos":    { "romaji": "Sono tokei wa takakatta desu.", "english": "That watch was expensive." },
+        "pastNeg":    { "romaji": "Kono hon wa takakunakatta desu.", "english": "This book was not expensive." }
+      }
+    },
+    {
+      "id": "adj-tsumetai",
+      "romaji": "Tsumetai",
+      "english": "Cold (to touch)",
+      "type": "i",
+      "stem": "Tsumeta",
+      "chapter": 8,
+      "examples": {
+        "presentPos": { "romaji": "Kono gyūnyū wa tsumetai desu.", "english": "This milk is cold." },
+        "presentNeg": { "romaji": "Kono ocha wa tsumetakunai desu.", "english": "This tea is not cold." },
+        "pastPos":    { "romaji": "Sono mizu wa tsumetakatta desu.", "english": "That water was cold." },
+        "pastNeg":    { "romaji": "Kono koohii wa tsumetakunakatta desu.", "english": "This coffee was not cold." }
+      }
+    },
+    {
+      "id": "adj-yasashii",
+      "romaji": "Yasashii",
+      "english": "Kind / Easy",
+      "type": "i",
+      "stem": "Yasashi",
+      "chapter": 8,
+      "examples": {
+        "presentPos": { "romaji": "Nihon-go wa yasashii desu.", "english": "Japanese is easy." },
+        "presentNeg": { "romaji": "Kono shiken wa yasashikunai desu.", "english": "This exam is not easy." },
+        "pastPos":    { "romaji": "Sono sensei wa yasashikatta desu.", "english": "That teacher was kind." },
+        "pastNeg":    { "romaji": "Ano shiken wa yasashikunakatta desu.", "english": "That exam was not easy." }
+      }
+    },
+    {
+      "id": "adj-yasui",
+      "romaji": "Yasui",
+      "english": "Cheap",
+      "type": "i",
+      "stem": "Yasu",
+      "chapter": 8,
+      "examples": {
+        "presentPos": { "romaji": "Kaisha no shokudō wa yasui desu.", "english": "The company cafeteria is cheap." },
+        "presentNeg": { "romaji": "Kono resutoran wa yasukunai desu.", "english": "This restaurant is not cheap." },
+        "pastPos":    { "romaji": "Ano mise wa yasukatta desu.", "english": "That store was cheap." },
+        "pastNeg":    { "romaji": "Kono tokei wa yasukunakatta desu.", "english": "This watch was not cheap." }
+      }
+    },
+    {
+      "id": "adj-benri",
+      "romaji": "Benri",
+      "english": "Convenient",
+      "type": "na",
+      "chapter": 8,
+      "examples": {
+        "presentPos": { "romaji": "Daigaku no ryō wa benri desu.", "english": "The university dormitory is convenient." },
+        "presentNeg": { "romaji": "Kono tokoro wa benri ja arimasen.", "english": "This place is not convenient." },
+        "pastPos":    { "romaji": "Nihon no chikatetsu wa benri deshita.", "english": "Japan's subway was convenient." },
+        "pastNeg":    { "romaji": "Ano mise wa benri ja arimasendeshita.", "english": "That store was not convenient." }
+      }
+    },
+    {
+      "id": "adj-genki",
+      "romaji": "Genki",
+      "english": "Healthy / Energetic",
+      "type": "na",
+      "chapter": 8,
+      "examples": {
+        "presentPos": { "romaji": "Sensei wa genki desu.", "english": "The teacher is well." },
+        "presentNeg": { "romaji": "Watashi wa genki ja arimasen.", "english": "I am not well." },
+        "pastPos":    { "romaji": "Tomodachi wa genki deshita.", "english": "My friend was well." },
+        "pastNeg":    { "romaji": "Kinō wa genki ja arimasendeshita.", "english": "I was not well yesterday." }
+      }
+    },
+    {
+      "id": "adj-hima",
+      "romaji": "Hima",
+      "english": "Free (not busy)",
+      "type": "na",
+      "chapter": 8,
+      "examples": {
+        "presentPos": { "romaji": "Kyō wa hima desu.", "english": "I am free today." },
+        "presentNeg": { "romaji": "Ashita wa hima ja arimasen.", "english": "I am not free tomorrow." },
+        "pastPos":    { "romaji": "Kinō wa hima deshita.", "english": "I was free yesterday." },
+        "pastNeg":    { "romaji": "Senshu wa hima ja arimasendeshita.", "english": "I was not free last week." }
+      }
+    },
+    {
+      "id": "adj-kirei",
+      "romaji": "Kirei",
+      "english": "Beautiful",
+      "type": "na",
+      "chapter": 8,
+      "examples": {
+        "presentPos": { "romaji": "Suisu wa kirei desu.", "english": "Switzerland is beautiful." },
+        "presentNeg": { "romaji": "Kono heya wa kirei ja arimasen.", "english": "This room is not beautiful." },
+        "pastPos":    { "romaji": "Ano hana wa kirei deshita.", "english": "Those flowers were beautiful." },
+        "pastNeg":    { "romaji": "Kono uchi wa kirei ja arimasendeshita.", "english": "This house was not beautiful." }
+      }
+    },
+    {
+      "id": "adj-nigiyaka",
+      "romaji": "Nigiyaka",
+      "english": "Lively",
+      "type": "na",
+      "chapter": 8,
+      "examples": {
+        "presentPos": { "romaji": "Ōsaka wa nigiyaka desu.", "english": "Osaka is lively." },
+        "presentNeg": { "romaji": "Kono machi wa nigiyaka ja arimasen.", "english": "This town is not lively." },
+        "pastPos":    { "romaji": "Shokudō wa nigiyaka deshita.", "english": "The cafeteria was lively." },
+        "pastNeg":    { "romaji": "Kinō no eki wa nigiyaka ja arimasendeshita.", "english": "Yesterday's station was not lively." }
+      }
+    },
+    {
+      "id": "adj-shinsetsu",
+      "romaji": "Shinsetsu",
+      "english": "Kind",
+      "type": "na",
+      "chapter": 8,
+      "examples": {
+        "presentPos": { "romaji": "Ano sensei wa shinsetsu desu.", "english": "That teacher is kind." },
+        "presentNeg": { "romaji": "Kare wa shinsetsu ja arimasen.", "english": "He is not kind." },
+        "pastPos":    { "romaji": "Sono hito wa shinsetsu deshita.", "english": "That person was kind." },
+        "pastNeg":    { "romaji": "Sono shain wa shinsetsu ja arimasendeshita.", "english": "That employee was not kind." }
+      }
+    },
+    {
+      "id": "adj-shizuka",
+      "romaji": "Shizuka",
+      "english": "Quiet",
+      "type": "na",
+      "chapter": 8,
+      "examples": {
+        "presentPos": { "romaji": "Ano resutoran wa shizuka desu.", "english": "That restaurant is quiet." },
+        "presentNeg": { "romaji": "Kono machi wa shizuka ja arimasen.", "english": "This town is not quiet." },
+        "pastPos":    { "romaji": "Nara wa shizuka deshita.", "english": "Nara was quiet." },
+        "pastNeg":    { "romaji": "Sono heya wa shizuka ja arimasendeshita.", "english": "That room was not quiet." }
+      }
+    },
+    {
+      "id": "adj-suteki",
+      "romaji": "Suteki",
+      "english": "Wonderful",
+      "type": "na",
+      "chapter": 8,
+      "examples": {
+        "presentPos": { "romaji": "Tanjōbi no purezento wa suteki desu.", "english": "The birthday present is wonderful." },
+        "presentNeg": { "romaji": "Kono tokoro wa suteki ja arimasen.", "english": "This place is not wonderful." },
+        "pastPos":    { "romaji": "Sono eiga wa suteki deshita.", "english": "That movie was wonderful." },
+        "pastNeg":    { "romaji": "Kono purezento wa suteki ja arimasendeshita.", "english": "This present was not wonderful." }
+      }
+    },
+    {
+      "id": "adj-yuumei",
+      "romaji": "Yūmei",
+      "english": "Famous",
+      "type": "na",
+      "chapter": 8,
+      "examples": {
+        "presentPos": { "romaji": "IMC wa yūmei desu.", "english": "IMC is famous." },
+        "presentNeg": { "romaji": "Kono daigaku wa yūmei ja arimasen.", "english": "This university is not famous." },
+        "pastPos":    { "romaji": "Sono eiga wa yūmei deshita.", "english": "That movie was famous." },
+        "pastNeg":    { "romaji": "Kono resutoran wa yūmei ja arimasendeshita.", "english": "This restaurant was not famous." }
+      }
+    }
+  ]
+}
